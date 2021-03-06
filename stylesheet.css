@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: verdana, sans-serif;
+    font-size: 1em;
+}
+
+#container {
+    background-color: lightgray;
+    width: 100%;
+}
+
+#navbar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    overflow-x: hidden;
+    background-color: #333;
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 70px;
+    font-size: 1.5rem;
+    color: black;
+    background-color: darkgray;
+}
+
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 0px 30px;
+}
+
+.nav-links a {
+    padding: 10px 0px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    font-weight: bold;
+}
+
+#main-doc {
+    background-color: snow;
+    border: 1px solid black;
+    padding: 0px 100px 25px 50px;
+    margin-left: 300px;
+    min-width: 525px;
+}
+
+.main-section {
+    margin-top: 20px;
+    line-height: 1.25rem;
+}
+
+.section-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.main-section p {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.main-section code {
+    font-family: sans-serif;
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    background-color: lightgray;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+li {
+    margin-top: 10px;
+    margin-left: 55px;
+}
+
+/* Move navbar to top of screen if smaller than 600px */
+
+@media screen and (max-width: 550px) {
+    
+.title {
+    display: flex;
+    justify-content: center;
+    padding-left; 0px;
+    height: 70px;
+}
+    
+#navbar {
+    height: 300px;
+    width: 100%;   
+    text-align: center;
+    position: sticky;
+  }
+    
+#main-doc {
+    margin-left: 0px;
+}
+    
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+}
